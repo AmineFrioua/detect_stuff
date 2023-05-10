@@ -13,4 +13,4 @@ The premiss for this is to try different stuff before using a script that will w
 - Script to detect humans and if they cross a forbidden area, you can imagine this as a factory machines and workers should not cross to a certain area 
 
 
-
+<img width="1349" alt="image" src="https://github.com/AmineFrioua/detect_stuff/assets/33686909/61fa0f7c-b615-4fed-8261-dd0963c4d7d2">
