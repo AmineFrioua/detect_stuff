@@ -19,6 +19,7 @@ active_detections = []
 # Open the video file for processing
 video_path = "sample.mp4"
 cap = cv2.VideoCapture(video_path)
+count = 0
 
 # Loop through each frame of the video and detect humans
 while cap.isOpened():
@@ -28,8 +29,13 @@ while cap.isOpened():
     if not ret:
         break
 
+    count += 1
+    if count % 4 != 0:
+        continue
+
     # Resize the frame to reduce processing time
     frame = cv2.resize(frame, (640, 360))
+    print(count)
 
     # Detect humans in the frame
     humans, scores = hog.detectMultiScale(
